@@ -1,7 +1,7 @@
 package model;
 
 public class Contact {
-    private int lastID = 0;
+    private static int lastID = 0;
     private int id;
     private String fullName;
     private String group;

@@ -39,7 +39,7 @@ public class View {
             System.out.println("Input phone: ");
             phone = scanner.nextLine();
         } while (!isValidPhone(phone));
-    
+        
         return new Contact(fullName, group, address, phone);
     }
     
@@ -51,11 +51,11 @@ public class View {
     }
 
     public void displayContact(List<Contact> contactList) {
-        System.out.println("\n--------------------------------- Display all Contact ----------------------------");
-        System.out.printf("%-7s %-15s %-15s %-15s %-7s %-15s %-15s%n", "ID", "Name", "First Name", "Last Name", "Group", "Address", "Phone");
+        System.out.println("\n----------------------------------- Display all Contact --------------------------------------");
+        System.out.printf("%-8s %-17s %-15s %-15s %-7s %-15s %-15s%n", "ID", "Name", "First Name", "Last Name", "Group", "Address", "Phone");
     
         for (Contact contact : contactList) {
-            System.out.printf("%-7d %-15s %-15s %-15s %-7s %-15s %-15s%n",
+            System.out.printf("%-8d %-17s %-15s %-15s %-7s %-15s %-15s%n",
                     contact.getId(), contact.getFullName(), contact.getFirstName(), contact.getLastName(),
                     contact.getGroup(), contact.getAddress(), contact.getPhone());
         }
