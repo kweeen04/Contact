@@ -28,6 +28,7 @@ public class ContactManager {
                     break;
                 case 3:
                     deleteContact();
+                    break;
                 case 4:
                     System.out.println("Exiting the program.");
                     System.exit(0);
